@@ -38,7 +38,7 @@ let cryptotest = require('crypto-api.js')
 
 ## Changelog
 
-##### 1.0.2  -  README.md update.
+##### 1.0.3  -  README.md update.
 
 ##### 1.0.1  -  README.md update and packgage.json update.
 
