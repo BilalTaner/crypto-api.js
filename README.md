@@ -1,7 +1,7 @@
 ## crypto-api.js
 
 ```shell
-npm install crypto-global
+npm install crypto-api.js
 ```
 
 #### INFORMATION
@@ -37,6 +37,8 @@ let cryptotest = require('crypto-api.js')
 ````
 
 ## Changelog
+
+##### 1.0.1  -  README.md update.
 
 ##### 1.0.1  -  README.md update and packgage.json update.
 
