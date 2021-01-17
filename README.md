@@ -10,7 +10,7 @@ With this module, you can instantly get information about crypto currencies from
 ##### Example Usage 
 
 ````javascript
-
+let cryptotest = require('crypto-api.js')
 (async() => { 
     let test = await cryptotest.getCrypto('bitcoin')
     console.log(test)
