@@ -1,0 +1,16 @@
+{
+  "name": "crypto-api.js",
+  "version": "1.0.0",
+  "description": "Allows you to get information about crypto currencies through the doviz.com website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shynox",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
