@@ -12,7 +12,7 @@ class Util {
   };
 
   static formatNumber(string) {
-    let format = string.replace(',', '.')
+    let format = string.replace(/,/g, '.')
     return format
   };
 
