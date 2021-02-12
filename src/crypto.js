@@ -17,7 +17,7 @@ module.exports = {
       let name = nameandtag.substring(0, nameandtag.indexOf(' ('))
       var tag = nameandtag.substring(nameandtag.indexOf('(') + 1, nameandtag.indexOf(')'));
       let volume = $2('div[class="statsValue___2iaoZ"]').eq(2).text()
-      let marketcap = $2('div[class="sc-16r8icm-0 iTsqJR statsSection___2aZ29"]').eq(0).eq(0).children('div').eq(0).children('div').eq(0).children('div').eq(0).children('div').eq(1).text()
+      let marketcap = $2('div[class="sc-16r8icm-0 iTsqJR statsSection___2aZ29"]').eq(0).children('div').eq(0).children('div').eq(0).children('div').eq(0).children('div').eq(1).text()
       let change = $('div[class="flex justify-between mt-8"]').children('div').children('div').children('div').eq(0).text()
       let date = $('div[class="text-xs text-blue-gray-2"]').eq(0).text()
       let interval = $('div[class="flex justify-between"]').find('div[class="text-md font-semibold text-white mt-4"]').eq(2).text()
@@ -27,7 +27,7 @@ module.exports = {
         name: name,
         tag: tag,
         volume: formatNumber(volume),
-        marketcap: formatNumber(marketcap.replace('%', '')),
+        marketcap: formatNumber(marketcap.substr(0, marketcap.length - 4).replace('%', '')),
         date: getDate(date.replace('Son (', '').replace(')', '')),
         daily: info = {
           change: formatNumber(change || '0'),
